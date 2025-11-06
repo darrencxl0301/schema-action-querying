@@ -1,0 +1,53 @@
+{
+  "join_relationships": [
+    {
+      "table1": "sales-2015.csv",
+      "table2": "customers.csv",
+      "left_key": "CustomerKey",
+      "right_key": "CustomerKey",
+      "join_type": "inner",
+      "description": "Link 2015 sales to customer information"
+    },
+    {
+      "table1": "sales-2017.csv",
+      "table2": "customers.csv",
+      "left_key": "CustomerKey",
+      "right_key": "CustomerKey",
+      "join_type": "inner",
+      "description": "Link 2017 sales to customer information"
+    },
+    {
+      "table1": "sales-2015.csv",
+      "table2": "returns.csv",
+      "left_key": "ProductKey",
+      "right_key": "ProductKey",
+      "join_type": "left",
+      "description": "Link 2015 sales to returns (left join to keep all sales)"
+    },
+    {
+      "table1": "sales-2017.csv",
+      "table2": "returns.csv",
+      "left_key": "ProductKey",
+      "right_key": "ProductKey",
+      "join_type": "left",
+      "description": "Link 2017 sales to returns (left join to keep all sales)"
+    },
+    {
+      "table1": "sales-2015.csv",
+      "table2": "sales-2017.csv",
+      "left_key": "CustomerKey",
+      "right_key": "CustomerKey",
+      "join_type": "outer",
+      "description": "Compare customers across 2015 and 2017 (outer join for full comparison)"
+    },
+    {
+      "table1": "returns.csv",
+      "table2": "customers.csv",
+      "left_key": "ProductKey",
+      "right_key": "CustomerKey",
+      "join_type": "inner",
+      "description": "Indirect link: returns → sales → customers (requires intermediate join)",
+      "note": "This is an indirect relationship - system should auto-detect path through sales tables"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "join_relationships": [
+    {
+      "table1": "flights.csv",
+      "table2": "users.csv",
+      "left_key": "userCode",
+      "right_key": "code",
+      "join_type": "inner",
+      "description": "Link flights to the users who booked them"
+    },
+    {
+      "table1": "hotels.csv",
+      "table2": "users.csv",
+      "left_key": "userCode",
+      "right_key": "code",
+      "join_type": "inner",
+      "description": "Link hotel bookings to the users who made them"
+    },
+    {
+      "table1": "flights.csv",
+      "table2": "hotels.csv",
+      "left_key": "travelCode",
+      "right_key": "travelCode",
+      "join_type": "inner",
+      "description": "Link flights and hotels that are part of the same travel package"
+    },
+    {
+      "table1": "flights.csv",
+      "table2": "hotels.csv",
+      "left_key": "userCode",
+      "right_key": "userCode",
+      "join_type": "outer",
+      "description": "Combine all travel records (flights and hotels) for each user"
+    }
+  ]
+}

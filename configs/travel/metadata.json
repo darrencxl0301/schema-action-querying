@@ -1,0 +1,84 @@
+{
+  "files": [
+    {
+      "name": "flights.csv",
+      "description": "Contains information about flight trips, including origin, destination, price, agency, and other travel details.",
+      "primary_key": null,
+      "foreign_keys": [
+        "userCode"
+      ],
+      "columns": {
+        "travelCode": "Identifier for a travel package or itinerary.",
+        "userCode": "Identifier for the user who booked the flight (foreign key).",
+        "from": "The origin city and state of the flight.",
+        "to": "The destination city and state of the flight.",
+        "flightType": "The class of the flight (e.g., firstClass, economic).",
+        "price": "The cost of the flight ticket.",
+        "time": "The duration of the flight in hours.",
+        "distance": "The distance of the flight.",
+        "agency": "The travel agency that handled the booking.",
+        "date": "The date of the flight."
+      },
+      "keywords": [
+        "flights",
+        "travel",
+        "trips",
+        "airlines",
+        "bookings",
+        "origin",
+        "destination",
+        "agency",
+        "tickets"
+      ]
+    },
+    {
+      "name": "users.csv",
+      "description": "Contains demographic and identifying information about users.",
+      "primary_key": "code",
+      "foreign_keys": [],
+      "columns": {
+        "code": "Unique identifier for each user.",
+        "company": "The company associated with the user.",
+        "name": "The full name of the user.",
+        "gender": "The gender of the user.",
+        "age": "The age of the user."
+      },
+      "keywords": [
+        "users",
+        "customers",
+        "demographics",
+        "profiles",
+        "name",
+        "gender",
+        "age"
+      ]
+    },
+    {
+      "name": "hotels.csv",
+      "description": "Contains information about hotel bookings, including location, duration, and cost.",
+      "primary_key": null,
+      "foreign_keys": [
+        "userCode"
+      ],
+      "columns": {
+        "travelCode": "Identifier for a travel package, linking to a broader trip.",
+        "userCode": "Identifier for the user who made the booking (foreign key).",
+        "name": "The name of the hotel.",
+        "place": "The city and state where the hotel is located.",
+        "days": "The number of days for the hotel stay.",
+        "price": "The price per day for the hotel stay.",
+        "total": "The total cost of the hotel stay.",
+        "date": "The check-in date for the hotel booking."
+      },
+      "keywords": [
+        "hotels",
+        "bookings",
+        "accommodation",
+        "reservations",
+        "lodging",
+        "stay",
+        "place"
+      ]
+    }
+  ]
+}

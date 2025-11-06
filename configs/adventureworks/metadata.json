@@ -1,0 +1,117 @@
+{
+  "files": [
+    {
+      "name": "customers.csv",
+      "description": "Customer demographic and contact information",
+      "primary_key": "CustomerKey",
+      "foreign_keys": [],
+      "columns": {
+        "CustomerKey": "Unique customer identifier",
+        "Prefix": "Title (MR., MRS., MS., DR.)",
+        "FirstName": "Customer first name",
+        "LastName": "Customer last name",
+        "BirthDate": "Date of birth (MM-DD-YYYY)",
+        "MaritalStatus": "Marital status (M=Married, S=Single)",
+        "Gender": "Gender (M=Male, F=Female)",
+        "EmailAddress": "Email contact address",
+        "AnnualIncome": "Yearly income in dollars",
+        "TotalChildren": "Number of children",
+        "EducationLevel": "Highest education level achieved",
+        "Occupation": "Job title or occupation type",
+        "HomeOwner": "Home ownership status (Y=Yes, N=No)"
+      },
+      "keywords": [
+        "customer",
+        "client",
+        "demographic",
+        "income",
+        "education",
+        "occupation",
+        "email",
+        "personal",
+        "name",
+        "age",
+        "marital",
+        "gender",
+        "homeowner"
+      ]
+    },
+    {
+      "name": "sales-2015.csv",
+      "description": "Sales transactions and orders for year 2015",
+      "primary_key": "OrderNumber",
+      "foreign_keys": ["ProductKey", "CustomerKey", "TerritoryKey"],
+      "time_range": "2015",
+      "columns": {
+        "OrderDate": "Date when order was placed (MM-DD-YYYY)",
+        "StockDate": "Date when product was in stock (MM-DD-YYYY)",
+        "OrderNumber": "Unique order identifier",
+        "ProductKey": "Product identifier (foreign key)",
+        "CustomerKey": "Customer identifier (foreign key)",
+        "TerritoryKey": "Sales territory identifier (foreign key)",
+        "OrderLineItem": "Line item number within order",
+        "OrderQuantity": "Number of units ordered"
+      },
+      "keywords": [
+        "sales",
+        "order",
+        "transaction",
+        "purchase",
+        "2015",
+        "revenue",
+        "quantity",
+        "bought",
+        "sold"
+      ]
+    },
+    {
+      "name": "sales-2017.csv",
+      "description": "Sales transactions and orders for year 2017",
+      "primary_key": "OrderNumber",
+      "foreign_keys": ["ProductKey", "CustomerKey", "TerritoryKey"],
+      "time_range": "2017",
+      "columns": {
+        "OrderDate": "Date when order was placed (MM-DD-YYYY)",
+        "StockDate": "Date when product was in stock (MM-DD-YYYY)",
+        "OrderNumber": "Unique order identifier",
+        "ProductKey": "Product identifier (foreign key)",
+        "CustomerKey": "Customer identifier (foreign key)",
+        "TerritoryKey": "Sales territory identifier (foreign key)",
+        "OrderLineItem": "Line item number within order",
+        "OrderQuantity": "Number of units ordered"
+      },
+      "keywords": [
+        "sales",
+        "order",
+        "transaction",
+        "purchase",
+        "2017",
+        "revenue",
+        "quantity",
+        "bought",
+        "sold"
+      ]
+    },
+    {
+      "name": "returns.csv",
+      "description": "Product return and refund records",
+      "primary_key": null,
+      "foreign_keys": ["ProductKey", "TerritoryKey"],
+      "columns": {
+        "ReturnDate": "Date when product was returned (MM-DD-YYYY)",
+        "TerritoryKey": "Territory identifier where return occurred",
+        "ProductKey": "Product identifier that was returned",
+        "ReturnQuantity": "Number of units returned"
+      },
+      "keywords": [
+        "return",
+        "refund",
+        "defect",
+        "complaint",
+        "returned",
+        "defective",
+        "exchange"
+      ]
+    }
+  ]
+}
