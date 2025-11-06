@@ -404,7 +404,7 @@ Check your `metadata.json`:
 3. Test: Run with `--debug` flag to see selection process
 </details>
 
-**More issues?** [Open a GitHub issue](https://github.com/yourusername/schema-action-querying/issues) with:
+**More issues?** [Open a GitHub issue](https://github.com/darrencxl0301/schema-action-querying/issues) with:
 - Your query
 - Expected vs actual output  
 - Your `metadata.json` structure (redacted if sensitive)
@@ -465,11 +465,11 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 If this work helps your research or project, please cite:
 ```bibtex
 @software{schema_action_querying2024,
-  author = {Darren [Your Full Name]},
+  author = {Darren Chai Xin Lun},
   title = {Schema-Action-querying: Multi-Table Text-to-Action with Small Language Models},
   year = {2024},
   publisher = {GitHub},
-  url = {https://github.com/yourusername/schema-action-querying},
+  url = {https://github.com/darrencxl0301/schema-action-querying},
   note = {Achieves 95\%+ accuracy on multi-table queries with 3B models}
 }
 ```
@@ -500,7 +500,7 @@ Apache License 2.0 - see [LICENSE](LICENSE) file for details.
 
 If you find this project useful, please ⭐ star the repo! It helps others discover this work.
 
-[![Star History Chart](https://api.star-history.com/svg?repos=yourusername/schema-action-querying&type=Date)](https://star-history.com/#yourusername/schema-action-querying&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=darrencxl0301/schema-action-querying&type=Date)](https://star-history.com/#darrencxl0301/schema-action-querying&Date)
 
 ---
 
