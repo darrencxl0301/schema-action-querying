@@ -364,7 +364,7 @@ self.model_3b = AutoModelForCausalLM.from_pretrained(
 | `google/gemma-2b-it` | 2B | 5GB (3GB w/ 4-bit) | ⭐⭐⭐ | Lower memory but reduced accuracy |
 
 **Performance Notes:**
-- ✅ **3B+ models**: 95%+ accuracy (recommended)
+- ✅ **3B+ models**: 90%+ accuracy (recommended)
 - ⚠️ **2B models**: 85-90% accuracy (acceptable for simple queries)
 - ❌ **< 2B models**: Not recommended (< 80% accuracy)
 
@@ -389,7 +389,7 @@ self.model_3b = AutoModelForCausalLM.from_pretrained(
 |----------|-----------|----------|------------|
 | GPT-4 Text-to-SQL | 1.7T params | 85% | Database required |
 | LlamaIndex (70B) | 70B params | 82% | Database required |
-| **Schema-Action-Querying** | **3B params** | **95%** | **10 minutes** |
+| **Schema-Action-Querying** | **3B params** | **90%** | **10 minutes** |
 
 **Why Small Models Work:**
 - Task decomposition: Each 3B model solves ONE simple problem
